@@ -45,8 +45,45 @@ class MyApp extends StatelessWidget {
                 Divider(
                   color: Colors.white70,
                   height: 10.0,
-                  indent: 80,
-                  endIndent: 80,
+                  indent: 75,
+                  endIndent: 75,
+                ),
+                //SizedBox(height: 10.0,),
+                Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal.shade900,
+                    ),
+                    title: Text(
+                      '+234 703 284 8352',
+                      style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Source Sans Pro',
+                      ),
+                    ),
+                  )
+                ),
+                Card(
+                    margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.teal.shade900,
+                      ),
+                      title: Text(
+                        'seunzi2122@gmail.com',
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Source Sans Pro',
+                        ),
+                      ),
+                    )
                 ),
               ],
             ),
@@ -56,3 +93,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
